@@ -1,0 +1,5 @@
+:{$PORT} {
+  header Content-Security-Policy "default-src 'self'; connect-src 'self' https://www.airbnb.com.au https://www.riparide.com; script-src 'self'; style-src 'self'; img-src 'self';"
+  
+  reverse_proxy YOUR-APP-NAME.railway.internal:3000
+}
